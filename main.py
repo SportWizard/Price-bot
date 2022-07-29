@@ -28,7 +28,7 @@ async def website(ctx):
   await ctx.send(read_website())
 
 @bot.command()
-async def view(ctx):
+async def cost(ctx):
   await ctx.send(return_price())
 
 @tasks.loop(minutes = 1)
