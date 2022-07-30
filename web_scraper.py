@@ -83,7 +83,7 @@ def ihl():
   if "$" in cost:
     cost = round(float(cost[1:]))
   else:
-    cost = round(float(span.text))
+    cost = round(float(cost.text))
 
   return cost
 
@@ -101,7 +101,7 @@ def ihl_new():
   if "$" in new_cost:
     new_cost = round(float(new_cost[1:]))
   else:
-    new_cost = round(float(span.text))
+    new_cost = round(float(new_cost.text))
 
   if new_cost != current_cost:
     got_original_cost = False
